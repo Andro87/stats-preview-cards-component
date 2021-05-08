@@ -1,0 +1,22 @@
+.wrap {
+    margin-bottom: 30px;
+    @media screen and(min-width:978px) {
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+}
+
+.number {
+    color: var(--White);
+    font-family: "inter";
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.detail {
+    color: var(--Sligh);
+    font-family: "lexend";
+    font-weight: 400;
+    font-size: 0.8rem;
+}

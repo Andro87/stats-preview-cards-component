@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("../public/fonts/Inter-Bold-slnt=0.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "inter";
+    src: url("../public/fonts/Inter-Regular-slnt=0.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "lexend";
+    src: url("../public/fonts/LexendDeca-Regular.ttf");
+    font-weight: 400;
+}
+
+:root {
+    /* Primary*/
+
+    --Verydarkblue/*main background*/: hsl(233, 47%, 7%);
+    --Darkdesaturatedblue/*card background*/: hsl(244, 38%, 16%);
+    --Softviolet/*accent*/: hsl(277, 64%, 61%);
+
+    /*Neutral*/
+
+    --White/*main heading, stats*/: hsl(0, 0%, 100%);
+    --Slightly/* transparent white (main paragraph)*/: hsla(0, 0%, 100%, 0.75);
+    --Sligh/* transparent white (stat headings)*/: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+    font-size: 15px;
+}
+
+h1 {
+    font-family: "inter";
+    font-weight: 700;
+    color: var(--White);
+    line-height: 1.2;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+    @media screen and(min-width:978px) {
+        margin-bottom: 40px;
+    }
+}
+
+p {
+    font-family: "inter";
+    font-weight: 400;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    color: var(--Slightly);
+    line-height: 1.5;
+}
